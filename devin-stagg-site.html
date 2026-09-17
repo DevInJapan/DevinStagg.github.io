@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devin Stagg — English Language Consultant &amp; Coach</title>
+<meta name="description" content="Devin Stagg — English language consultant and coach based in Kobe, Japan. 15+ years teaching experience, TESOL graduate research, and coaching through Kobe Eigomura.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='none' stroke='%23A83E29' stroke-width='4'/%3E%3Ctext x='32' y='41' font-family='Georgia,serif' font-size='24' fill='%23A83E29' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#211e1a;
+    --paper:#ece7da;
+    --paper-alt:#e3ddcb;
+    --indigo:#263b57;
+    --indigo-dark:#1a2a3e;
+    --seal:#a83e29;
+    --seal-dark:#8a3320;
+    --muted:#5b5647;
+    --rule:#d6cfbc;
+    --font-display:'Shippori Mincho', serif;
+    --font-body:'Zen Kaku Gothic New', sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    font-weight:400;
+    line-height:1.7;
+    font-size:17px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    max-width:700px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  h1,h2{
+    font-family:var(--font-display);
+    color:var(--ink);
+    margin:0;
+    font-weight:600;
+  }
+
+  a{color:var(--indigo);}
+  a:hover{color:var(--seal);}
+  a:focus-visible, .btn:focus-visible{
+    outline:2px solid var(--indigo);
+    outline-offset:3px;
+  }
+
+  /* ---------- Header / nav ---------- */
+  header.site-nav{
+    padding:28px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .site-nav .wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .site-nav .mark{
+    font-family:var(--font-display);
+    font-size:19px;
+    font-weight:600;
+    letter-spacing:0.02em;
+    color:var(--ink);
+    text-decoration:none;
+  }
+  .site-nav nav{
+    display:flex;
+    gap:28px;
+  }
+  .site-nav nav a{
+    font-size:15px;
+    color:var(--muted);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    padding-bottom:2px;
+    margin-left:28px;
+  }
+  .site-nav nav a:first-child{margin-left:0;}
+  .site-nav nav a:hover{
+    color:var(--indigo);
+    border-bottom-color:var(--indigo);
+  }
+
+  /* ---------- Seal mark ---------- */
+  .seal{
+    display:inline-block;
+    transform:rotate(-7deg);
+    flex-shrink:0;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:76px 0 64px;
+  }
+  .hero-top{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:24px;
+    margin-bottom:26px;
+  }
+  .hero .kicker{
+    font-size:15px;
+    color:var(--muted);
+    margin:0 0 10px;
+  }
+  .hero h1{
+    font-size:clamp(34px, 5.6vw, 54px);
+    line-height:1.12;
+    letter-spacing:-0.01em;
+    animation:rise 0.7s ease-out both;
+  }
+  .hero .sub{
+    max-width:52ch;
+    font-size:18px;
+    color:var(--ink);
+    margin:20px 0 8px;
+    animation:rise 0.7s ease-out 0.12s both;
+  }
+  .hero .loc{
+    font-size:15px;
+    color:var(--muted);
+    margin:0 0 30px;
+  }
+  .hero .cta-row{
+    display:flex;
+    gap:22px;
+    align-items:center;
+    flex-wrap:wrap;
+    animation:rise 0.7s ease-out 0.22s both;
+  }
+  .btn{
+    display:inline-block;
+    background:var(--seal);
+    color:#fdf9f1;
+    text-decoration:none;
+    font-size:15px;
+    padding:13px 26px;
+    border-radius:2px;
+    transition:background 0.15s ease;
+  }
+  .btn:hover{background:var(--seal-dark); color:#fdf9f1;}
+  .link-quiet{
+    font-size:15px;
+    color:var(--indigo);
+    text-decoration:none;
+    border-bottom:1px solid var(--rule);
+  }
+  .link-quiet:hover{color:var(--seal); border-bottom-color:var(--seal);}
+
+  @keyframes rise{
+    from{opacity:0; transform:translateY(10px);}
+    to{opacity:1; transform:translateY(0);}
+  }
+
+  /* ---------- Sections ---------- */
+  section{
+    padding:56px 0;
+    border-top:1px solid var(--rule);
+  }
+  section h2{
+    font-size:26px;
+    margin-bottom:22px;
+  }
+  .profile p{
+    max-width:62ch;
+    font-size:18px;
+  }
+
+  /* ---------- Timeline (experience/education) ---------- */
+  .tl-group{margin-bottom:30px;}
+  .tl-group:last-child{margin-bottom:0;}
+  .tl-row{
+    display:grid;
+    grid-template-columns:140px 1fr;
+    gap:18px;
+    padding:12px 0;
+  }
+  .tl-row + .tl-row{border-top:1px solid var(--rule);}
+  .tl-date{
+    font-size:14px;
+    color:var(--indigo);
+    padding-top:2px;
+    white-space:nowrap;
+  }
+  .tl-role{font-weight:500;}
+  .tl-org{color:var(--muted);}
+  .tl-detail{
+    margin:8px 0 0;
+    font-size:15.5px;
+    color:var(--ink);
+    max-width:52ch;
+  }
+  .tl-sub{
+    margin-left:0;
+    padding-left:20px;
+    border-left:1px solid var(--rule);
+    margin-top:14px;
+  }
+  .tl-sub .tl-row{grid-template-columns:110px 1fr; padding:9px 0;}
+  .tl-sub .tl-date{font-size:13px;}
+
+  .divider-label{
+    font-size:14px;
+    color:var(--muted);
+    margin:0 0 10px;
+  }
+
+  .speaking p{
+    max-width:60ch;
+    font-size:15.5px;
+    color:var(--ink);
+    margin-top:28px;
+    padding-top:28px;
+    border-top:1px solid var(--rule);
+  }
+
+  /* ---------- Coaching ---------- */
+  .coaching{background:var(--paper-alt);}
+  .coaching .seal{margin-bottom:18px;}
+  .coaching p.lead{
+    max-width:58ch;
+    font-size:18px;
+    margin-bottom:30px;
+  }
+  .tiers{
+    list-style:none;
+    margin:0 0 34px;
+    padding:0;
+  }
+  .tiers li{
+    padding:18px 0;
+    border-top:1px solid var(--rule);
+    display:grid;
+    grid-template-columns:170px 1fr;
+    gap:18px;
+  }
+  .tiers li:last-child{border-bottom:1px solid var(--rule);}
+  .tier-name{font-weight:500; color:var(--indigo);}
+  .tier-desc{color:var(--ink); font-size:15.5px;}
+
+  /* ---------- Contact / footer ---------- */
+  footer{
+    padding:56px 0 70px;
+    border-top:1px solid var(--rule);
+  }
+  footer .foot-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+  }
+  footer .foot-left p{
+    margin:0 0 6px;
+    font-size:15.5px;
+    color:var(--muted);
+  }
+  footer .foot-left a{
+    font-size:17px;
+    color:var(--ink);
+    text-decoration:none;
+    font-family:var(--font-display);
+  }
+  footer .foot-left a:hover{color:var(--seal);}
+  footer .copyright{
+    font-size:13px;
+    color:var(--muted);
+    margin-top:36px;
+  }
+
+  @media (max-width:560px){
+    .tl-row{grid-template-columns:1fr; gap:4px;}
+    .tl-sub .tl-row{grid-template-columns:1fr;}
+    .tiers li{grid-template-columns:1fr; gap:6px;}
+    .hero-top{flex-direction:row;}
+    section h2{font-size:23px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="mark" href="#top">Devin Stagg</a>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#experience">Experience</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-top">
+        <div>
+          <p class="kicker">Devin Stagg</p>
+          <h1>English Language<br>Consultant &amp; Coach</h1>
+        </div>
+        <svg class="seal" width="72" height="72" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="29" fill="none" stroke="#a83e29" stroke-width="2.5"/>
+          <circle cx="32" cy="32" r="24" fill="none" stroke="#a83e29" stroke-width="1"/>
+          <text x="32" y="40" font-family="Shippori Mincho, serif" font-size="21" fill="#a83e29" text-anchor="middle">DS</text>
+        </svg>
+      </div>
+      <p class="sub">Fifteen-plus years teaching English in Japan — public classrooms, conversation circles, and one-on-one coaching.</p>
+      <p class="loc">Kobe, Japan</p>
+      <div class="cta-row">
+        <a class="btn" href="#coaching">Work with me</a>
+        <a class="link-quiet" href="#experience">See my background</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="profile" id="profile">
+    <div class="wrap">
+      <h2>Profile</h2>
+      <p>I've spent the past fifteen years teaching English in Japan — from public junior high classrooms in Kobe and Sanda to Kobe Eigomura, the conversation and coaching business I run with my wife. My approach draws on that classroom experience alongside ongoing graduate research into how people actually acquire a second language, currently underway at Temple University's TESOL program in Japan.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+
+      <div class="tl-group">
+        <p class="divider-label">Current</p>
+        <div class="tl-row">
+          <div class="tl-date">2017 – Present</div>
+          <div><span class="tl-role">Co-Founder</span><br><span class="tl-org">Kobe Eigomura</span></div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-date">2018 – Present</div>
+          <div><span class="tl-role">Assistant Language Teacher, Junior High Liaison</span><br><span class="tl-org">Sanda Board of Education</span></div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-date">2017 – Present</div>
+          <div><span class="tl-role">Instructor</span><br><span class="tl-org">Sewa International</span></div>
+        </div>
+      </div>
+
+      <div class="tl-group">
+        <p class="divider-label">Prior</p>
+        <div class="tl-row">
+          <div class="tl-date">2013 – 2018</div>
+          <div><span class="tl-role">JET Programme</span><br><span class="tl-org">Kobe Board of Education</span></div>
+        </div>
+        <div class="tl-sub">
+          <div class="tl-row">
+            <div class="tl-date">2017 – 2018</div>
+            <div>
+              <span class="tl-role">ALT &amp; International Course Teacher</span><br>
+              <span class="tl-org">Fukiai Senior High School</span>
+              <p class="tl-detail">Built coursework on social entrepreneurship and global issues.</p>
+            </div>
+          </div>
+          <div class="tl-row">
+            <div class="tl-date">2017 – 2018</div>
+            <div>
+              <span class="tl-role">ALT Advisor</span>
+              <p class="tl-detail">Liaised between assistant language teachers and the Board of Education; organized professional development.</p>
+            </div>
+          </div>
+          <div class="tl-row">
+            <div class="tl-date">2015 – 2017</div>
+            <div>
+              <span class="tl-role">Tarumi Ward Team Leader</span>
+              <p class="tl-detail">Led demonstration lessons; mediated and resolved conflicts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-date">2012 – 2013</div>
+          <div><span class="tl-role">ESL &amp; Substitute Teacher</span><br><span class="tl-org">Capital Christian Middle &amp; High School, Sacramento</span>
+            <p class="tl-detail">Taught English, Social Studies, and Theology; liaison for international students.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <div class="tl-group">
+        <div class="tl-row">
+          <div class="tl-date">2026 – Present</div>
+          <div><span class="tl-role">M.S. Education, TESOL</span><br><span class="tl-org">Temple University, Japan Campus</span>
+            <p class="tl-detail">Research focus on language aptitude and individual differences in second language acquisition.</p>
+          </div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-date">2017 – 2024</div>
+          <div><span class="tl-role">Graduate Diploma, International Relations</span><br><span class="tl-org">London School of Economics</span></div>
+        </div>
+        <div class="tl-row">
+          <div class="tl-date">2006 – 2011</div>
+          <div><span class="tl-role">B.A. Asian Studies · B.A. Religious Studies</span><br><span class="tl-org">California State University, Sacramento — Minor in Japanese</span></div>
+        </div>
+      </div>
+      <div class="speaking">
+        <p>I've also led professional-development sessions for fellow teachers, including at the JET Skills Development Conference, Kobe City's Neighborhood Days teacher orientations, and the Phi Beta Delta International Honor Society's national conference.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="coaching" id="coaching">
+    <div class="wrap">
+      <svg class="seal" width="48" height="48" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="29" fill="none" stroke="#a83e29" stroke-width="2.5"/>
+        <circle cx="32" cy="32" r="24" fill="none" stroke="#a83e29" stroke-width="1"/>
+        <text x="32" y="40" font-family="Shippori Mincho, serif" font-size="21" fill="#a83e29" text-anchor="middle">DS</text>
+      </svg>
+      <h2>Coaching with me</h2>
+      <p class="lead">Through Kobe Eigomura, the practice I run with my wife, I work with English learners at three levels — pick the one that matches where you are.</p>
+      <ul class="tiers">
+        <li>
+          <span class="tier-name">Group conversation</span>
+          <span class="tier-desc">Weekly Friday-evening sessions — the entry point, open to anyone building conversational confidence.</span>
+        </li>
+        <li>
+          <span class="tier-name">Small-group coaching</span>
+          <span class="tier-desc">Cohorts built around a shared goal, such as business English or exam preparation.</span>
+        </li>
+        <li>
+          <span class="tier-name">One-on-one coaching</span>
+          <span class="tier-desc">Premium coaching tied to a specific outcome — a job interview, a certification, a career move.</span>
+        </li>
+      </ul>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="foot-row">
+        <div class="foot-left">
+          <p>Get in touch</p>
+          <a href="mailto:devstagg@gmail.com">devstagg@gmail.com</a>
+        </div>
+        <svg class="seal" width="44" height="44" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="29" fill="none" stroke="#a83e29" stroke-width="2.5"/>
+          <circle cx="32" cy="32" r="24" fill="none" stroke="#a83e29" stroke-width="1"/>
+          <text x="32" y="40" font-family="Shippori Mincho, serif" font-size="21" fill="#a83e29" text-anchor="middle">DS</text>
+        </svg>
+      </div>
+      <p class="copyright">Kobe, Japan</p>
+    </div>
+  </footer>
+</main>
+
+</body>
+</html>
